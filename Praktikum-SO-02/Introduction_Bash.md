@@ -8,7 +8,7 @@
   - Example : `Bashrc`
 
 
-## **Basics Function** 
+## **Basics Functions** 
 
 - Gunakan "#" untuk comment sebuah line 
 
