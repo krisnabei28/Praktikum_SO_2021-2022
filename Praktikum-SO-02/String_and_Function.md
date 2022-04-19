@@ -5,13 +5,30 @@
 
 ## **String in Bash**
 
-- Di `bash` kita dapat melakukan deklarasi string seperti berikut :
+- Di `bash` kita dapat melakukan `deklarasi` string seperti berikut :
     -     kalimat="Saya makan"
 
-- Cara mencari panjang string di bash :<br>
+- Cara mencari `length` string di `bash` :<br>
     **Cara 1 :**
     -     length_string=`expr length "$word"`
+    **Example :**
+    -     word="Universitas"
+          length_string=`expr length "$word"`
+          echo $length_string
+
+          output: 11
     **Cara 2 :**
     -     echo ${#word}
+    **Example :**
+    -     word="Universitas"
+          echo ${#word}
 
-- 
+          output: 11
+
+- Cara mencari huruf sesuai `Index` tertentu di `bash` :
+    -     index_string=`expr index "$word" index_ke-`
+    **Example :**
+    -     word="Universitas"
+          index_string=`expr index "$word" 1`
+
+          output: U
