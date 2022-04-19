@@ -1,6 +1,6 @@
 # **String And Function In Bash**
 
-`**NOTE**`
+**NOTE**
 - Ketika run program bash `.bash` disarankan menggunakan `./file.sh`
 
 ## **String in Bash**
@@ -9,9 +9,9 @@
     -     kalimat="Saya makan"
 
 - Cara mencari panjang string di bash :<br>
-    `Cara 1` :
+    **Cara 1 :**
     -     length_string=`expr length "$word"`
-    `Cara 2` :
+    **Cara 2 :**
     -     echo ${#word}
 
 - 
