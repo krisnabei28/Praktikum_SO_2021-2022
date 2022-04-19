@@ -25,7 +25,7 @@
 
           output: 11
 
-- Cara mencari huruf sesuai `Index` tertentu di `bash` :
+- Cara mencari huruf sesuai `index` tertentu di `bash` :
     -     index_string=`expr index "$word" index_ke-`
     **Example :**
     -     word="Universitas"
