@@ -6,29 +6,48 @@
 ## **String in Bash**
 
 - Di `bash` kita dapat melakukan `deklarasi` string seperti berikut :
-    -     kalimat="Saya makan"
+    -     > kalimat="Saya makan"
 
-- Cara mencari `length` string di `bash` :<br>
+- Mencari `length` string di `bash` :<br>
     **Cara 1 :**
-    -     length_string=`expr length "$word"`
+    -     > length_string=`expr length "$word"`
     **Example :**
-    -     word="Universitas"
-          length_string=`expr length "$word"`
-          echo $length_string
+    -     > word="Universitas"
+          > length_string=`expr length "$word"`
+          > echo $length_string
 
           output: 11
     **Cara 2 :**
-    -     echo ${#word}
+    -     > echo ${#word}
     **Example :**
-    -     word="Universitas"
-          echo ${#word}
+    -     > word="Universitas"
+          > echo ${#word}
 
           output: 11
 
-- Cara mencari huruf sesuai `index` tertentu di `bash` :
-    -     index_string=`expr index "$word" index_ke-`
+- Mencari huruf sesuai `index` tertentu di `bash` :
+    -     > index_string=`expr index "$word" index_ke-`
     **Example :**
-    -     word="Universitas"
-          index_string=`expr index "$word" 1`
+    -     > word="Universitas"
+          > index_string=`expr index "$word" 1`
 
           output: U
+
+**Contoh manipulasi string di bash**
+
+- Mencari kata dengan panjang tertentu :<br>
+Format : `${string:position:length}`
+
+    -     > word="bash"
+          > echo "${word:0:2}"
+
+          output : ba
+
+    -     #!/bin/bash
+
+          word="bash"
+          echo "Head : ${word:0:1}"
+          echo "Rest : ${word:1}"
+          
+          
+
