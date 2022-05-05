@@ -38,7 +38,15 @@
     -     > ${word:(index)}
 
     **Example :**
-    -     >
+    -     > word="bash" 
+          > echo "${word:(-1)}"
+          > echo "${word:(-2)}"
+          > echo "${word:(-3)}" 
+
+          Output :
+          > h
+          > sh
+          > ash
 
 **Contoh manipulasi string di bash**
 
@@ -56,5 +64,16 @@ Format : `${string:position:length}`
           echo "Head : ${word:0:1}"
           echo "Rest : ${word:1}"
           
-          
+
+## **Function in Bash**
+
+- Format function di `bash` :
+
+    -     Myfunc(){
+             echo $1
+          }   
+
+          Myfunc "Universitas"
+
+          Output : Universitas
 
