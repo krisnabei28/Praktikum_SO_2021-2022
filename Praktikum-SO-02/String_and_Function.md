@@ -33,6 +33,13 @@
 
           output: U
 
+- Mengembalikan karakter terakhir dari string di `bash` :<br>
+      Note : `index` dimulai dari -1, -2, dst
+    -     > ${word:(index)}
+
+    **Example :**
+    -     >
+
 **Contoh manipulasi string di bash**
 
 - Mencari kata dengan panjang tertentu :<br>
